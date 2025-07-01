@@ -1,0 +1,11 @@
+{
+  "name": "R Development Environment",
+  "image": "rocker/r-base",
+  "postCreateCommand": "R -e 'install.packages(c(\"tidyverse\", \"devtools\", repos - \"https://cloud.r-project.org\")'",
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio"
+    }
+  },
+  "forwardPorts": [8787]
+}
